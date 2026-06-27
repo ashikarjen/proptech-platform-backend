@@ -168,3 +168,7 @@ SIMPLE_JWT = {
 
     "UPDATE_LAST_LOGIN": True,
 }
+
+AUTHENTICATION_BACKENDS = [
+    "accounts.backends.EmailBackend",
+]
