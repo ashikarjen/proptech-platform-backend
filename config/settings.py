@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "common",
     "projects",
     "django_filters",
+    "leads",
 ]
 
 MIDDLEWARE = [
