@@ -29,12 +29,6 @@ class Project(BaseModel):
         null=True,
     )
 
-    brochure = models.FileField(
-        upload_to="projects/brochures/",
-        blank=True,
-        null=True,
-    )
-
     video_url = models.URLField(
         blank=True,
         null=True,
