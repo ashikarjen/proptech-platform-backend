@@ -12,6 +12,7 @@ class ProjectViewSet(viewsets.ModelViewSet):
     filter_backends = [
         DjangoFilterBackend,
         filters.SearchFilter,
+        filters.OrderingFilter,
     ]
 
     filterset_fields = [
@@ -24,3 +25,11 @@ class ProjectViewSet(viewsets.ModelViewSet):
         "title",
         "location",
     ]
+
+    ordering_fields = [
+        "created_at",
+        "investment_amount",
+        "expected_roi",
+    ]
+
+    ordering = ["-created_at"]
