@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'accounts',
     "common",
+    "projects",
+    "django_filters",
 ]
 
 MIDDLEWARE = [
@@ -154,6 +156,10 @@ REST_FRAMEWORK = {
     ],
 
     "DEFAULT_PAGINATION_CLASS": "common.pagination.StandardResultsSetPagination",
+
+    "DEFAULT_FILTER_BACKENDS": [
+        "django_filters.rest_framework.DjangoFilterBackend",
+    ],
 
     "PAGE_SIZE": 10,
 }
