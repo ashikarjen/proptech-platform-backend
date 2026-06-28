@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "leads",
     "documents",
     "timeline",
+    "investments",
 ]
 
 MIDDLEWARE = [
